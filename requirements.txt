@@ -1,0 +1,11 @@
+# Core backend and API
+Flask==3.0.3
+
+# Data handling and in-memory analytics
+pandas==2.2.2
+duckdb==1.1.1
+
+# Optional: AI integration (mock or real)
+openai==1.44.0
+# or
+# transformers==4.45.0

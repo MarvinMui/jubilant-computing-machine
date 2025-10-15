@@ -1,0 +1,79 @@
+[
+  {
+    "device_id": "C-19283",
+    "hostname": "laptop-jdoe",
+    "assigned_to": "John D.",
+    "os": "macos",
+    "ip_address": "10.10.22.5",
+    "last_checkin": "2024-06-12T14:30:00Z",
+    "location": "New York HQ",
+    "encryption_status": "FileVault Enabled",
+    "status": "active"
+  },
+  {
+    "device_id": "C-87412",
+    "hostname": "laptop-mlee",
+    "assigned_to": "Michelle Lee",
+    "os": "Windows 10 Pro",
+    "ip_address": "10.10.22.11",
+    "last_checkin": "2024-07-10T11:05:00Z",
+    "location": "London Office",
+    "encryption_status": "BitLocker Enabled",
+    "status": "active"
+  },
+  {
+    "device_id": "C-44831",
+    "hostname": "desktop-akumar",
+    "assigned_to": "Anita Kumar",
+    "os": "Ubuntu 22.04",
+    "ip_address": "10.11.8.42",
+    "last_checkin": "2024-07-05T09:15:00Z",
+    "location": "Bangalore Office",
+    "encryption_status": "LUKS Enabled",
+    "status": "active"
+  },
+  {
+    "device_id": "C-22901",
+    "hostname": "server-db01",
+    "assigned_to": "Infra Team",
+    "os": "RHEL8",
+    "ip_address": "172.16.5.10",
+    "last_checkin": "2024-05-29T22:00:00Z",
+    "location": "Data Center 1",
+    "encryption_status": "Not Encrypted",
+    "status": "maintenance"
+  },
+  {
+    "device_id": "C-67355",
+    "hostname": "mac-mini-lchen",
+    "assigned_to": "Li Chen",
+    "os": "Mac OS X",
+    "ip_address": "10.10.22.8",
+    "last_checkin": "2024-06-28T13:45:00Z",
+    "location": "Remote (Home Office)",
+    "encryption_status": "",
+    "status": "active"
+  },
+  {
+    "device_id": "C-95723",
+    "hostname": "laptop-jsantos",
+    "assigned_to": "Jose Santos",
+    "os": "windows10",
+    "ip_address": "10.10.22.18",
+    "last_checkin": "2024-07-18T08:27:00Z",
+    "location": "Chicago HQ",
+    "encryption_status": "bitlocker enabled",
+    "status": "active"
+  },
+  {
+    "device_id": "C-50011",
+    "hostname": "tablet-sdev",
+    "assigned_to": "",
+    "os": "iPadOS 17.0",
+    "ip_address": "10.10.30.20",
+    "last_checkin": "2024-07-22T12:00:00Z",
+    "location": "Remote",
+    "encryption_status": "Unknown",
+    "status": "inactive"
+  }
+]
