@@ -40,7 +40,7 @@
     "ip_address": "172.16.5.10",
     "last_checkin": "2024-05-29T22:00:00Z",
     "location": "tokyo",
-    "encryption_status": "Not Encrypted",
+    "encryption_status": "None",
     "status": "maintenance"
   },
   {

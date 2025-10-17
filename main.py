@@ -50,9 +50,8 @@ def ingest_file():
 
     normalized_df = ingest.normalize(df)
 
-    device_df = normalized_df[df.columns[[0, 1, 4, 3, 2, 6, 8]]]
-    # user_df = normalized_df[df.columns[[0, 1, 4, 3, 2, 6, 8]]]
-    # app_df = normalized_df[df.columns[[0, 1, 4, 3, 2, 6, 8]]]
+    device_cols = ["device_id", "hostname", "ip_address", "os", "assigned_user", "encryption", "location", "status"]
+    device_df = normalized_df[device_cols]
 
     # Insert into DuckDB
     with duckdb.connect(DB_PATH) as con:
