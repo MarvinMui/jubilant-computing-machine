@@ -28,7 +28,7 @@
     "os": "MACOS",
     "ip_address": "10.11.8.42",
     "last_checkin": "2024-07-05T09:15:00Z",
-    "location": "Bangalore Office",
+    "location": "London",
     "encryption_status": "LUKS Enabled",
     "status": "active"
   },
@@ -39,7 +39,7 @@
     "os": "windows 10",
     "ip_address": "172.16.5.10",
     "last_checkin": "2024-05-29T22:00:00Z",
-    "location": "Data Center 1",
+    "location": "tokyo",
     "encryption_status": "Not Encrypted",
     "status": "maintenance"
   },
@@ -61,7 +61,7 @@
     "os": "windows10",
     "ip_address": "10.10.22.18",
     "last_checkin": "2024-07-18T08:27:00Z",
-    "location": "Chicago HQ",
+    "location": "NEW YORK HQ",
     "encryption_status": "bitlocker enabled",
     "status": "active"
   },
@@ -69,7 +69,7 @@
     "device_id": "C-50011",
     "hostname": "tablet-sdev",
     "assigned_to": "",
-    "os": "   mac os    ",
+    "os": "mac os",
     "ip_address": "10.10.30.20",
     "last_checkin": "2024-07-22T12:00:00Z",
     "location": "Remote",

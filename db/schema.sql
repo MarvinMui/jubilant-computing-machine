@@ -4,8 +4,8 @@ CREATE TABLE IF NOT EXISTS devices (
     ip_address TEXT,
     os TEXT,
     assigned_user TEXT,
+--    encryption BOOLEAN,
     location TEXT,
-    encryption BOOLEAN,
     status TEXT
 );
 
