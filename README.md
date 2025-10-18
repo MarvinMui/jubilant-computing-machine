@@ -21,26 +21,35 @@ Here are a few examples of API requests that can be made to the application thro
 __Health check__
 
 *check if the application is up and running*
+
 curl http://127.0.0.1:5000
+
 
 __Ingest__
 
 *first step to do, run this to spin up the duckdb database and load in data from the preset JSON file I created with*
 *example records*
+
 curl -X POST http://127.0.0.1:5000/ingest \
      -F "file=@data/test/hardware.json"
+
 
 __Data__
 
 *basic request to check all the records in a table. if you run this after the previous ingesting request*
 *you should see all the json records loaded into the database*
+
 curl http://127.0.0.1:5000/data
+
 curl "http://127.0.0.1:5000/data?table=devices"
+
 
 __Reset__
 
 *clears all the records in the tables, mainly used for development*
+
 curl -X POST http://127.0.0.1:5000/reset
+
 
 __Natural langauge AI query__
 
@@ -63,8 +72,11 @@ curl -X POST http://127.0.0.1:5000/ask \
 # Model, Database, Architecture Overview
 
 Flask
+
 Duckdb
+
 pandas dataframe
+
 
 The system uses a modular Flask server application backend with a DuckDB local database for lightweight, serverless data
 management. It also very easily integrates with python and allows direct SQL queries on a local file without a server as
@@ -88,24 +100,39 @@ integration
 
 ## Planned steps
 Normalization:
+
 Enrich missing or inconsistent fields
+
 Merge and reconcile conflicting attributes (device names, IPs)
+
 Detect anomalies or configuration drift
+
 Suggest data corrections or improvements
 
+
 Data Quality:
+
 Correct data typing and entry inconsistencies
+
 Enforce referential integrity and schema conformity
+
 Identify and resolve duplicate or contradictory records
+
 Apply heuristic filters for noisy or invalid inputs
+
 More robust correction of unstandardized or misapplied field conventions
 
+
 Data analytics
+
 Generate basic statistics (e.g., most common OS, device counts)
+
 Implement interactive dashboards, search functions, data visualisation
 
 # AI usage description
 sentence transformer
+
+
 This project employs a SentenceTransformers to vectorize the short string values of the json fields and categorize the
 inconsistent field values into field values that are allowed. For example OS names and locations are
 semantically compared to the preset "canonical" values by converting them to word embedding vectors and their relatedness is measured
