@@ -8,4 +8,4 @@ duckdb==1.1.1
 # Optional: AI integration (mock or real)
 openai==1.44.0
 # or
-# transformers==4.45.0
+transformers==4.45.0
