@@ -85,6 +85,29 @@ def reset_db():
         return {"error": str(e)}, 500
 
 
+@app.route("/ask", methods=["POST"])
+def ask():
+    data = request.json
+    query = data.get("query", "").lower()
+
+    with duckdb.connect(DB_PATH) as con:
+        if "no encryption" in query:
+            sql = "SELECT * FROM devices WHERE encryption = FALSE"
+        elif "macos" in query:
+            sql = "SELECT * FROM devices WHERE LOWER(os) = 'macOS'"
+        else:
+            return jsonify({"message": "Mock AI can't parse this query yet."})
+
+        result = con.execute(sql).fetchall()
+        # print(result)
+        cols = con.execute(sql).df().columns
+
+        # print(cols)
+        result_dicts = [dict(zip(cols, row)) for row in result]
+
+    return jsonify(result_dicts)
+
+
 if __name__ == "__main__":
     db.init_db()
     app.run(debug=True)
