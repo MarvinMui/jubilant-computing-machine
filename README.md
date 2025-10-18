@@ -16,30 +16,37 @@ python main.py
 # Usage
 
 Here are a few examples of API requests that can be made to the application through terminal
+
+
 __Health check__
+
 *check if the application is up and running*
 curl http://127.0.0.1:5000
 
 __Ingest__
+
 *first step to do, run this to spin up the duckdb database and load in data from the preset JSON file I created with*
 *example records*
 curl -X POST http://127.0.0.1:5000/ingest \
      -F "file=@data/test/hardware.json"
 
 __Data__
+
 *basic request to check all the records in a table. if you run this after the previous ingesting request*
 *you should see all the json records loaded into the database*
 curl http://127.0.0.1:5000/data
 curl "http://127.0.0.1:5000/data?table=devices"
 
 __Reset__
+
 *clears all the records in the tables, mainly used for development*
 curl -X POST http://127.0.0.1:5000/reset
 
 __Natural langauge AI query__
+
 *basic implementation of AI query with natural spoken words as a mockup. This would later be down with an api key to*
 *openAi but i thought it would be outside of the scope of this project*
-*the following queries are the two that are accepted currently with the mock: *
+*the following queries are the two that are accepted currently with the mock:*
 *Which users have no encryption?*
 *Which users have a macos?*
 
