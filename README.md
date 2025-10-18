@@ -99,7 +99,7 @@ Given a more fleshed out implementation of a project like this, these would be a
 integration
 
 ## Planned steps
-Normalization:
+#### Normalization:
 
 Enrich missing or inconsistent fields
 
@@ -110,7 +110,7 @@ Detect anomalies or configuration drift
 Suggest data corrections or improvements
 
 
-Data Quality:
+#### Data Quality:
 
 Correct data typing and entry inconsistencies
 
@@ -123,7 +123,7 @@ Apply heuristic filters for noisy or invalid inputs
 More robust correction of unstandardized or misapplied field conventions
 
 
-Data analytics
+#### Data analytics
 
 Generate basic statistics (e.g., most common OS, device counts)
 
